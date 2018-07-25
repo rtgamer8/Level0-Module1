@@ -26,13 +26,22 @@ import org.jointheleague.graphical.robot.Robot;
 	    // 2. Print out the keyPressed variable and write down the numbers for each arrow key
 System.out.println(keyPressed);	   
 // 3. If the up arrow is pressed, move the Robot up the screen.
-		
+if (keyPressed == 38) {
+	rob.microMove(5);
+}
 	    // 4. If the down arrow is pressed, move the Robot down.
+if(keyPressed == 40) {
+	rob.microMove(-5);
+}
 
 	    // 5. If the left arrow is pressed, make the Robot go left.
-	   
+	   if (keyPressed == 39) { 
+		   rob.microTurn(45);
+	   }
 	    // 6. If right is pressed, move the Robot right.
-	    
+	    if (keyPressed == 37) {
+	    rob.microTurn(-45);
+	    }
 	    // 7. Run your program and move the Robot to RD-2D for a surprise! 
 	}
 
